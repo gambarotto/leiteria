@@ -14,10 +14,14 @@
         <div class="row menu-container">
           <div class="col-3 col-sm-6 container-logo">
             <?php if (has_custom_logo()) {
-                the_custom_logo();
-            } ?>
+    the_custom_logo();
+} ?>
           </div>
+
           <div class="col-9 col-sm-6 container-nav-menu">
+            <div class="hamburguer-menu">
+              <div class="hamburguer-menu-line"></div>
+            </div>
             <?php
               if (has_nav_menu('primary')) {
                   wp_nav_menu(array(

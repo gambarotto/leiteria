@@ -9,6 +9,7 @@ function dlc_theme_css_js()
     wp_enqueue_script('heroimages_js', get_template_directory_uri().'/assets/js/heroImages.js', array(), '', true);
     wp_enqueue_script('formscript_js', get_template_directory_uri().'/assets/js/formScript.js', array(), '', true);
     wp_enqueue_script('header_js', get_template_directory_uri().'/assets/js/header-scroll.js', array(), '', true);
+    wp_enqueue_script('hamburgues_js', get_template_directory_uri().'/assets/js/hamburguer-menu.js', array(), '', true);
 }
 
 function dlc_after_setup()

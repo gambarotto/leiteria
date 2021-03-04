@@ -1,5 +1,5 @@
 const target = document.querySelectorAll('[data-animate');
-const animationClass = 'animate';
+const animationClassElement = 'animate';
 
 const debounce = function(func, wait, immediate) {
     let timeout;
@@ -20,17 +20,16 @@ function animateElement() {
     target.forEach(function(element) {
         const offsetYElement = element.getBoundingClientRect().top + 50;
         if (offsetYElement < window.innerHeight) {
-            element.classList.add(animationClass);
+            element.classList.add(animationClassElement);
         } else {
-            element.classList.remove(animationClass);
+            element.classList.remove(animationClassElement);
         }
     })
 }
 animateElement();
 if (target.length > 0) {
     window.addEventListener('scroll', debounce(function() {
-        const offsetYElement = target[0].getBoundingClientRect().top + 50;
         animateElement();
-    }, 200));
+    }, 100));
 
 }

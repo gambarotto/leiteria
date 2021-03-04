@@ -42,9 +42,7 @@
               fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
               mollit anim id est laborum.
             </p>
-            <a href="/" class="button-products">Conheça nossos Produtos</a>
           </div>
-
         </div>
         <div class="col-md-6 container-image-store">
           <div class="image-about-div ">
@@ -69,8 +67,7 @@
           <div class="col-12 container-text-order">
             <p
               style="color:<?php echo get_theme_mod('dlc_order_description_color'); ?>">
-            <p><?php echo get_theme_mod('dlc_order_description'); ?>
-            </p>
+              <?php echo get_theme_mod('dlc_order_description'); ?>
             </p>
           </div>
           <?php if (!empty(get_theme_mod('dlc_order_map'))):?>
@@ -112,7 +109,7 @@
   </section>
   <?php endif; ?>
   <?php if (get_theme_mod('dlc_resale_activated') === true): ?>
-  <section id=" revendedor" class="img-fluid section-bg-image-resale"
+  <section id="revendedor" class="img-fluid section-bg-image-resale"
     style="background-image: url(<?php echo get_theme_mod('dlc_bg_resale_image'); ?>)">
     <div class="container">
       <h2 class="title-resale-section" data-animate="top"><?php echo get_theme_mod('dlc_resale_title'); ?>
@@ -124,7 +121,7 @@
         </p>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 container-resale">
           <div class=" col-md-6 container-form-resale" data-animate="left">
             <form name="resale" onsubmit="sendWhatsappResale(event,this)">
               <div class="form-group">
@@ -173,7 +170,7 @@
             </form>
           </div>
         </div>
-        <div class="col-md-6" data-animate="right">
+        <div class="col-md-6 container-img-resale" data-animate="right">
           <div class="image-fluid image-representative">
             <img
               src="<?php echo get_theme_mod('dlc_resale_image'); ?>"
