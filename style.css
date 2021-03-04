@@ -1,0 +1,17 @@
+/*
+Theme Name:   Leiteria Catarina theme
+Description:  Tema desenvolvido para a Leiteria Catarina
+Author:       Diego
+Author URL:   http://localhost/leiteria
+Version:      1.0
+Text Domain:  leiteria
+*/
+@font-face { 
+
+font-family: Comfortaa;
+
+src: url(http://localhost/leiteria/wp-content/themes/leiteria-catarina/assets/fonts/Comfortaa-VariableFont_wght.ttf);
+
+font-weight: regular; 
+
+}
